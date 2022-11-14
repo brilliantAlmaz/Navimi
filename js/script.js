@@ -48,10 +48,10 @@ let mainInterval = setInterval(()=>{
 	mainSliderCount = slideNext(mainSlider,mainSliderItems,mainSliderCount,mainTracker)
 }, 5000);
 
-quoteSlider.addEventListener('click', function(){
+document.querySelector('.quote').addEventListener('click', function(){
 	quoteSliderCount = slideNext(quoteSlider,quoteSliderItems,quoteSliderCount,quoteTracker);
 });
-quoteSlider.addEventListener('dblclick', function(){
+document.querySelector('.quote').addEventListener('dblclick', function(){
 	quoteSliderCount = slidePrev(quoteSlider,quoteSliderItems,quoteSliderCount,quoteTracker);
 });
 
